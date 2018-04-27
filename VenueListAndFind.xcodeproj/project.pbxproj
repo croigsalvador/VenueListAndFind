@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2883B93C86D0FB727870CD34 /* Pods_VenueListAndFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116598FB036F4115E8F12933 /* Pods_VenueListAndFind.framework */; };
 		5B94924A20931A8F000B1623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94924920931A8F000B1623 /* AppDelegate.swift */; };
-		5B94924C20931A8F000B1623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94924B20931A8F000B1623 /* ViewController.swift */; };
 		5B94924F20931A8F000B1623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B94924D20931A8F000B1623 /* Main.storyboard */; };
 		5B94925120931A95000B1623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B94925020931A95000B1623 /* Assets.xcassets */; };
 		5B94925420931A95000B1623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B94925220931A95000B1623 /* LaunchScreen.storyboard */; };
 		5B94925F20931A95000B1623 /* VenueListAndFindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94925E20931A95000B1623 /* VenueListAndFindTests.swift */; };
 		5B94926A20931A96000B1623 /* VenueListAndFindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94926920931A96000B1623 /* VenueListAndFindUITests.swift */; };
+		5B94927D209328B9000B1623 /* VenueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94927C209328B9000B1623 /* VenueListViewController.swift */; };
+		5B94927F20932AFC000B1623 /* VenueRadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94927E20932AFC000B1623 /* VenueRadarViewController.swift */; };
+		5B94928120932B78000B1623 /* VenueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94928020932B77000B1623 /* VenueDataSource.swift */; };
+		5B94928320933646000B1623 /* ObtainPlacesForLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94928220933646000B1623 /* ObtainPlacesForLocationUseCase.swift */; };
+		5B949285209336CF000B1623 /* GetUserLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B949284209336CF000B1623 /* GetUserLocationUseCase.swift */; };
+		5B94928720933817000B1623 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94928620933817000B1623 /* LocationService.swift */; };
+		5B94928920934351000B1623 /* ObtainGooglePlacesNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94928820934351000B1623 /* ObtainGooglePlacesNetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		116598FB036F4115E8F12933 /* Pods_VenueListAndFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VenueListAndFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19373BFFE0FCD92BD78660EE /* Pods-VenueListAndFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenueListAndFind.release.xcconfig"; path = "Pods/Target Support Files/Pods-VenueListAndFind/Pods-VenueListAndFind.release.xcconfig"; sourceTree = "<group>"; };
+		3765956E0D9EFD090D0C1DFD /* Pods-VenueListAndFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VenueListAndFind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VenueListAndFind/Pods-VenueListAndFind.debug.xcconfig"; sourceTree = "<group>"; };
 		5B94924620931A8F000B1623 /* VenueListAndFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenueListAndFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B94924920931A8F000B1623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B94924B20931A8F000B1623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B94924E20931A8F000B1623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B94925020931A95000B1623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B94925320931A95000B1623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,13 @@
 		5B94926520931A96000B1623 /* VenueListAndFindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenueListAndFindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B94926920931A96000B1623 /* VenueListAndFindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListAndFindUITests.swift; sourceTree = "<group>"; };
 		5B94926B20931A96000B1623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B94927C209328B9000B1623 /* VenueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueListViewController.swift; sourceTree = "<group>"; };
+		5B94927E20932AFC000B1623 /* VenueRadarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRadarViewController.swift; sourceTree = "<group>"; };
+		5B94928020932B77000B1623 /* VenueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDataSource.swift; sourceTree = "<group>"; };
+		5B94928220933646000B1623 /* ObtainPlacesForLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainPlacesForLocationUseCase.swift; sourceTree = "<group>"; };
+		5B949284209336CF000B1623 /* GetUserLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserLocationUseCase.swift; sourceTree = "<group>"; };
+		5B94928620933817000B1623 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		5B94928820934351000B1623 /* ObtainGooglePlacesNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtainGooglePlacesNetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2883B93C86D0FB727870CD34 /* Pods_VenueListAndFind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CD7D0CBE3C088443D262FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3765956E0D9EFD090D0C1DFD /* Pods-VenueListAndFind.debug.xcconfig */,
+				19373BFFE0FCD92BD78660EE /* Pods-VenueListAndFind.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B94923D20931A8F000B1623 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				5B94925D20931A95000B1623 /* VenueListAndFindTests */,
 				5B94926820931A96000B1623 /* VenueListAndFindUITests */,
 				5B94924720931A8F000B1623 /* Products */,
+				08CD7D0CBE3C088443D262FC /* Pods */,
+				A9B2E86B284A10E5280EE503 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +125,14 @@
 		5B94924820931A8F000B1623 /* VenueListAndFind */ = {
 			isa = PBXGroup;
 			children = (
+				5B94927820931E5E000B1623 /* Core */,
+				5B94927720931E53000B1623 /* Views */,
 				5B94924920931A8F000B1623 /* AppDelegate.swift */,
-				5B94924B20931A8F000B1623 /* ViewController.swift */,
 				5B94924D20931A8F000B1623 /* Main.storyboard */,
 				5B94925020931A95000B1623 /* Assets.xcassets */,
 				5B94925220931A95000B1623 /* LaunchScreen.storyboard */,
 				5B94925520931A95000B1623 /* Info.plist */,
+				5B94928020932B77000B1623 /* VenueDataSource.swift */,
 			);
 			path = VenueListAndFind;
 			sourceTree = "<group>";
@@ -125,6 +155,42 @@
 			path = VenueListAndFindUITests;
 			sourceTree = "<group>";
 		};
+		5B94927720931E53000B1623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B94927C209328B9000B1623 /* VenueListViewController.swift */,
+				5B94927E20932AFC000B1623 /* VenueRadarViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B94927820931E5E000B1623 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B94928620933817000B1623 /* LocationService.swift */,
+				5B94927920931E6B000B1623 /* UseCases */,
+				5B94928820934351000B1623 /* ObtainGooglePlacesNetworkProvider.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5B94927920931E6B000B1623 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5B94928220933646000B1623 /* ObtainPlacesForLocationUseCase.swift */,
+				5B949284209336CF000B1623 /* GetUserLocationUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A9B2E86B284A10E5280EE503 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				116598FB036F4115E8F12933 /* Pods_VenueListAndFind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B94926E20931A96000B1623 /* Build configuration list for PBXNativeTarget "VenueListAndFind" */;
 			buildPhases = (
+				D21CCFD4940F5BE1CDF5FEDA /* [CP] Check Pods Manifest.lock */,
 				5B94924220931A8F000B1623 /* Sources */,
 				5B94924320931A8F000B1623 /* Frameworks */,
 				5B94924420931A8F000B1623 /* Resources */,
+				DA9A51CD4FAD7C17C31647AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,12 +319,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D21CCFD4940F5BE1CDF5FEDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VenueListAndFind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9A51CD4FAD7C17C31647AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VenueListAndFind/Pods-VenueListAndFind-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VenueListAndFind/Pods-VenueListAndFind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B94924220931A8F000B1623 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B94924C20931A8F000B1623 /* ViewController.swift in Sources */,
+				5B94928720933817000B1623 /* LocationService.swift in Sources */,
+				5B94928920934351000B1623 /* ObtainGooglePlacesNetworkProvider.swift in Sources */,
+				5B94927D209328B9000B1623 /* VenueListViewController.swift in Sources */,
+				5B94927F20932AFC000B1623 /* VenueRadarViewController.swift in Sources */,
+				5B94928120932B78000B1623 /* VenueDataSource.swift in Sources */,
+				5B94928320933646000B1623 /* ObtainPlacesForLocationUseCase.swift in Sources */,
+				5B949285209336CF000B1623 /* GetUserLocationUseCase.swift in Sources */,
 				5B94924A20931A8F000B1623 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +541,7 @@
 		};
 		5B94926F20931A96000B1623 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3765956E0D9EFD090D0C1DFD /* Pods-VenueListAndFind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +560,7 @@
 		};
 		5B94927020931A96000B1623 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19373BFFE0FCD92BD78660EE /* Pods-VenueListAndFind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
